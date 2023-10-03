@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.icon-and-ancor {
+    display: flex;
+    gap: 95px;
+}
+
+.header-ancor {
+    display: flex;
+    gap: 45px;
+}
+
+.header-ancor a {
+    color: #707070;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.login-singup {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.login-singup a {
+    color: #707070;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header-Mobile {
+    display: none;
+}
+
+
+@media only screen and (max-width:1080px) {
+
+    .header-section-1 {
+        display: none;
+    }
+
+    .header-section-2 {
+        padding: 30px 0;
+    }
+
+    .header-Mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-ancor-Mobie {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        transition: 0.3s ease;
+    }
+
+    .header-ancor-Mobie.active {
+        top: 85px;
+        left: 0;
+        right: 0;
+        background: #FFF2D8;
+        padding: 20px 0;
+    }
+
+    .header-ancor-Mobie a {
+        color: #707070;
+    }
+
+}
